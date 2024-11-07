@@ -20,3 +20,22 @@ export const create = async (req, res) => {
     });
   }
 };
+
+export const getTweet = async (req, res) => {
+  try {
+    const response = await tweetService.get(req.params.id);
+    return res.status(201).json({
+      success: true,
+      message: "Successfully created a tweet",
+      data: response,
+      err: {},
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: "Something Went Wrong",
+      data: {},
+      err: error,
+    });
+  }
+};
