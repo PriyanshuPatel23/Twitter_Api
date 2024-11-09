@@ -11,7 +11,7 @@ class likeService {
     if (modeltype == "Tweet") {
       var likeable = await this.tweetRepository.find(modelid);
     } else if (modeltype == "Comment") {
-      //remaining yet
+      //not needed as already implemented seperately
     } else {
       throw new Error("unknown model type");
     }
