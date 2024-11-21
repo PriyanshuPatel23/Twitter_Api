@@ -33,7 +33,7 @@ SALT=9
 ### Clone the Repository
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/PriyanshuPatel23/Twitter_Api.git
 ```
 
 ### Install Dependencies
